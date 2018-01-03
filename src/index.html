@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>IT school</title>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Acme|Archivo+Black|Berkshire+Swash|Courgette|Fjalla+One|Lobster|Pacifico" rel="stylesheet">
+    <script id="sap-ui-bootstrap"
+            src="resources/sap-ui-core.js"
+            data-sap-ui-libs="sap.m"
+            data-sap-ui-theme="sap_belize"
+            data-sap-ui-compatVersion="edge"
+            data-sap-ui-preload="async"
+            data-sap-ui-resourceroots='{"com.itschool.ui5typescript": "./"}'
+            data-sap-ui-frameOptions="trusted">
+    </script>
+    <script type="text/javascript" src="/node_modules/ui5ts/ui5ts.js"></script>
+    <script>
+        sap.ui.getCore().attachInit(function () {
+            new sap.ui.core.ComponentContainer({name: "com.itschool.ui5typescript"}).placeAt("content");
+        });
+    </script>
+</head>
+<body class="sapUiBody">
+
+<div id="content"></div>
+</body>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</html>

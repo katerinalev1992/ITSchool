@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "amd",
+    "experimentalDecorators": true,
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "sourceMap": true,
+    "baseUrl": "./",
+    "paths": {
+      "com/itschool/ui5typescript/*": [ "./src/*" ],
+      "sap/*": [ "./node_modules/ui5ts/exports/sap/*" ]
+    }
+  },
+  "files": [
+    "node_modules/ui5ts/ui5ts.d.ts"
+  ],
+  "include": [
+    "src/**/*",
+    "node_modules/@types"
+  ],
+  "exclude": [
+    "node_modules",
+    "resources",
+    "**/*.spec.ts"
+  ]
+}

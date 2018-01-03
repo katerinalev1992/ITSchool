@@ -1,0 +1,38 @@
+/*font-family: 'Courgette', cursive;*/
+/*font-family: 'Fjalla One', sans-serif;*/
+/*font-family: 'Lobster', cursive;*/
+/*font-family: 'Abril Fatface', cursive;*/
+/*font-family: 'Pacifico', cursive;*/
+/*font-family: 'Acme', sans-serif;*/
+/*font-family: 'Berkshire Swash', cursive;*/
+/*font-family: 'Archivo Black', sans-serif;
+ */
+
+.headerText {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 4em;
+}
+.subHeaderText {
+    font-family: 'Acme', sans-serif;
+    font-size: 1.5em;
+}
+
+.sideHeader {
+    font-family: 'Acme', sans-serif;
+    font-size: 1.5em;
+}
+
+.sapMPanelHdr {
+    font-family: 'Acme', sans-serif;
+    font-size: 1.5em;
+}
+
+.contactInfo {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1em;
+}
+
+.courseBox{
+    /*box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .6);*/
+    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .6);
+}

@@ -1,0 +1,288 @@
+<mvc:View height="100%"
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns="sap.m"
+          xmlns:l="sap.ui.layout"
+          xmlns:u="sap.ui.unified"
+          controllerName="com.itschool.ui5typescript.controller.Main">
+    <VBox class="sapUiLargeMarginTop sapUiLargeMarginBeginEnd">
+        <Toolbar id="toolbar1" height="10em">
+            <ToolbarSpacer/>
+            <VBox>
+                <Text text="IT art" class="headerText"/>
+                <Text text="information technology courses" class="subHeaderText"/>
+            </VBox>
+            <ToolbarSpacer/>
+            <ToolbarSpacer/>
+            <VBox>
+                <Link id="email" text="Email: levitskaks@gmail.com" press="onEmailPress" class="contactInfo"/>
+                <Link id="phone" text="Cellphone: +38095 89 66 297" press="onPhonePress" class="contactInfo"/>
+                <Label text="Address: info" class="contactInfo"/>
+                <Label text="Skype: katerinalev1992" class="contactInfo"/>
+            </VBox>
+            <ToolbarSpacer/>
+            <ToolbarSpacer/>
+            <Image src="/images/facebook.png" width="2rem" class="sapUiSmallMargin" press="onFacebookPress"/>
+            <Image src="/images/instagram.png" width="2rem" class="sapUiSmallMargin" press="onInstagramPress"/>
+            <Image src="/images/twitter.png" width="2rem" class="sapUiSmallMargin" press="onTwitterPress"/>
+            <Image src="/images/linkedin.png" width="2rem" class="sapUiSmallMargin" press="onLinkedinPress"/>
+        </Toolbar>
+
+        <Toolbar>
+            <Button id="toggleSecondaryContent" press="handleToggleSecondaryContent" icon="sap-icon://menu"/>
+            <ToolbarSpacer/>
+            <Button text="Lessons schedule"/>
+            <ToolbarSpacer/>
+            <Button text="Prices for cource"/>
+            <ToolbarSpacer/>
+            <Button text="About us"/>
+            <ToolbarSpacer/>
+            <Button text="Who we are"/>
+            <ToolbarSpacer/>
+            <Button text="Help with selection of cource"/>
+            <ToolbarSpacer/>
+
+            <Image src="/images/britain.png" width="1rem" class="sapUiSmallMargin" press=""/>
+            <Image src="/images/russia.png" width="1rem" class="sapUiSmallMargin" press=""/>
+            <Image src="/images/ukraine.png" width="1rem" class="sapUiSmallMargin" press=""/>
+        </Toolbar>
+
+    </VBox>
+
+    <u:SplitContainer
+            id="mySplitContainer"
+            showSecondaryContent="true" secondaryContentWidth="25%" class="sapUiLargeMarginBeginEnd">
+        <u:secondaryContent>
+            <Text text="Select your course" class="sideHeader sapUiSmallMargin "/>
+            <ScrollContainer height="150%">
+                <Panel expanded="true" headerText="For children" expandable="true">
+                    <List>
+                        <CustomListItem>
+                            <Text text="Game with robots" class="sapUiSmallMargin"/>
+                        </CustomListItem>
+                        <CustomListItem>
+                            <Text text="Basic principle of algorithms" class="sapUiSmallMargin"/>
+                        </CustomListItem>
+                        <CustomListItem>
+                            <Text text="Constructor LEGO" class="sapUiSmallMargin"/>
+                        </CustomListItem>
+                    </List>
+                </Panel>
+                <Panel expanded="true" headerText="For pupils" expandable="true">
+                    <List>
+                        <CustomListItem>
+                            <Text text="Informatics basis" class="sapUiSmallMargin"/>
+                        </CustomListItem>
+                        <CustomListItem>
+                            <Text text="Support with preparation to the main exams" class="sapUiSmallMargin"/>
+                        </CustomListItem>
+                        <CustomListItem>
+                            <Text text="Basics of programming" class="sapUiSmallMargin"/>
+                        </CustomListItem>
+                    </List>
+                </Panel>
+                <Panel expanded="true" headerText="For employees" expandable="true">
+                    <List>
+                        <CustomListItem>
+                            <Text text="Backend development" class="sapUiSmallMargin"/>
+                        </CustomListItem>
+                        <CustomListItem>
+                            <Text text="Frontend development" class="sapUiSmallMargin"/>
+                        </CustomListItem>
+                        <CustomListItem>
+                            <Text text="iOS development" class="sapUiSmallMargin"/>
+                        </CustomListItem>
+                        <CustomListItem>
+                            <Text text="Android development" class="sapUiSmallMargin"/>
+                        </CustomListItem>
+                    </List>
+                </Panel>
+                <Panel expanded="true" headerText="Information literacy" expandable="true">
+                    <List>
+                        <CustomListItem>
+                            <Text text="How to use Windows 7" class="sapUiSmallMargin"/>
+                        </CustomListItem>
+                        <CustomListItem>
+                            <Text text="How to use Windows 10" class="sapUiSmallMargin"/>
+                        </CustomListItem>
+                        <CustomListItem>
+                            <Text text="How to use Microsoft Office programs" class="sapUiSmallMargin"/>
+                        </CustomListItem>
+                        <CustomListItem>
+                            <Text text="How protect computer from child" class="sapUiSmallMargin"/>
+                        </CustomListItem>
+                    </List>
+                </Panel>
+            </ScrollContainer>
+
+        </u:secondaryContent>
+        <u:content>
+            <Panel class="sapUiLargeMarginTop sapUiMediumMarginBeginEnd">
+                <l:Grid defaultSpan="L4 M6 S12">
+                    <l:content>
+                        <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop" transitionTime="2000"
+                                   displayTime="4000">
+                            <GenericTile
+                                    backgroundImage="/images/news/itNews.png"
+                                    frameType="TwoByOne" press="pressOnTileOne">
+                                <TileContent footer="January 5, 2018">
+                                    <NewsContent
+                                            contentText="News content"
+                                            subheader="read more"/>
+                                </TileContent>
+                            </GenericTile>
+                            <GenericTile
+                                    backgroundImage="/images/news/news.png"
+                                    frameType="TwoByOne" press="pressOnTileTwo">
+                                <TileContent footer="March 4, 2018">
+                                    <NewsContent
+                                            contentText="News content"
+                                            subheader="Read more"/>
+                                </TileContent>
+                            </GenericTile>
+                        </SlideTile>
+                        <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop" transitionTime="250"
+                                   displayTime="2500">
+                            <GenericTile
+                                    backgroundImage="/images/news/news1.jpeg"
+                                    frameType="TwoByOne" press="pressOnTileOne">
+                                <TileContent footer="February 16, 2018">
+                                    <NewsContent
+                                            contentText="Content of news"
+                                            subheader="ReadMore"/>
+                                </TileContent>
+                            </GenericTile>
+                            <GenericTile
+                                    backgroundImage="/images/news/news2.jpg"
+                                    frameType="TwoByOne" state="Loaded">
+                                <TileContent footer="February 6, 2018">
+                                    <NewsContent
+                                            contentText="Content of news"
+                                            subheader="ReadMore"/>
+                                </TileContent>
+                            </GenericTile>
+                            <GenericTile
+                                    backgroundImage="/images/news/news3.jpg"
+                                    frameType="TwoByOne" press="pressOnTileOne">
+                                <TileContent footer="February 16, 2018">
+                                    <NewsContent
+                                            contentText="Content of news"
+                                            subheader="ReadMore"/>
+                                </TileContent>
+                            </GenericTile>
+                        </SlideTile>
+                        <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop" transitionTime="2000"
+                                   displayTime="3000">
+                            <GenericTile
+                                    backgroundImage="/images/news/news3.jpg"
+                                    frameType="TwoByOne" press="pressOnTileOne">
+                                <TileContent footer="February 16, 2018">
+                                    <NewsContent
+                                            contentText="Content of news"
+                                            subheader="ReadMore"/>
+                                </TileContent>
+                            </GenericTile>
+                            <GenericTile
+                                    backgroundImage="/images/news/news4.png"
+                                    frameType="TwoByOne" state="Loaded">
+                                <TileContent footer="February 6, 2018">
+                                    <NewsContent
+                                            contentText="Content of news"
+                                            subheader="ReadMore"/>
+                                </TileContent>
+                            </GenericTile>
+                        </SlideTile>
+                    </l:content>
+                </l:Grid>
+
+            </Panel>
+            <ScrollContainer height="130%">
+                <l:Grid defaultSpan="L3 M4 S6" class="sapUiMediumMarginBegin sapUiMediumMarginTop sapUiMediumMarginEnd">
+                    <l:content class="sapUiLargeMarginTop sapUiLargeMarginBeginEnd">
+
+                        <VBox class="courseBox" height="330px" alignContent="Center" alignItems="Center">
+                            <Image src="/images/js/js.png" width="10rem" height="10rem" class="sapUiSmallMarginTop"/>
+                            <Text text="Javascript for beginners"/>
+                            <RatingIndicator maxValue="5"
+                                             class="sapUiSmallMarginBottom"
+                                             value="4" tooltip="Like 400"/>
+                            <Text text="5000/month"/>
+                            <Text text="13 pc free"/>
+                            <Button text="View more ..." press="onItemPress"/>
+                        </VBox>
+                        <VBox class="courseBox" height="330px" alignContent="Center" alignItems="Center">
+                            <Image src="/images/js/js2.png" width="10rem" height="10rem" class="sapUiSmallMarginTop"/>
+                            <Text text="Javascript (intermediate level)"/>
+                            <RatingIndicator maxValue="5"
+                                             class="sapUiSmallMarginBottom"
+                                             value="4" tooltip="Like 800"/>
+                            <Text text="6000/month"/>
+                            <Text text="4 pc free"/>
+                            <Button text="View more ..." press="onItemPress"/>
+
+                        </VBox>
+                        <VBox class="courseBox" height="330px" alignContent="Center" alignItems="Center">
+                            <Image src="/images/js/js3.png" width="10rem" height="10rem" class="sapUiSmallMarginTop"/>
+                            <Text text="Javascript (fluent level)"/>
+                            <RatingIndicator maxValue="5"
+                                             class="sapUiSmallMarginBottom"
+                                             value="5" tooltip="Like 600"/>
+                            <Text text="7000/month"/>
+                            <Text text="2 pc free"/>
+                            <Button text="View more ..." press="onItemPress"/>
+
+                        </VBox>
+                        <VBox class="courseBox" height="330px" alignContent="Center" alignItems="Center">
+                            <Image src="/images/ts/ts.png" width="10rem" height="10rem" class="sapUiSmallMarginTop"/>
+                            <Text text="Javascript for beginners"/>
+                            <RatingIndicator maxValue="5"
+                                             class="sapUiSmallMarginBottom"
+                                             value="4" tooltip="Like 400"/>
+                            <Text text="5000/month"/>
+                            <Text text="13 pc free"/>
+                            <Button text="View more ..." press="onItemPress"/>
+
+                        </VBox>
+                        <VBox class="courseBox" height="330px" alignContent="Center" alignItems="Center">
+                            <Image src="/images/angular/angular.png" width="10rem" height="10rem" class="sapUiSmallMarginTop"/>
+                            <Text text="Full angular course"/>
+                            <RatingIndicator maxValue="5"
+                                             class="sapUiSmallMarginBottom"
+                                             value="4" tooltip="Like 380"/>
+                            <Text text="6000/month"/>
+                            <Text text="2 pc free"/>
+                            <Button text="View more ..." press="onItemPress"/>
+
+                        </VBox>
+                        <VBox class="courseBox" height="330px" alignContent="Center" alignItems="Center">
+                            <Image src="/images/vue/Vue.png" width="10rem" height="10rem" class="sapUiSmallMarginTop"/>
+                            <Text text="Full Vue.js course"/>
+                            <RatingIndicator maxValue="5"
+                                             class="sapUiSmallMarginBottom"
+                                             value="5" tooltip="Like 220"/>
+                            <Text text="4000/month"/>
+                            <Text text="4 pc free"/>
+                            <Button text="View more ..." press="onItemPress"/>
+
+                        </VBox>
+                        <VBox class="courseBox" height="330px" alignContent="Center" alignItems="Center">
+                            <Image src="/images/ui5/ui5.png" width="10rem" height="10rem" class="sapUiSmallMarginTop"/>
+                            <Text text="Full OpenUi5 course"/>
+                            <RatingIndicator maxValue="5"
+                                             class="sapUiSmallMarginBottom"
+                                             value="5" tooltip="Like 220"/>
+                            <Text text="3500/month"/>
+                            <Text text="8 pc free"/>
+                            <Button text="View more ..." press="onItemPress"/>
+
+                        </VBox>
+
+                    </l:content>
+                </l:Grid>
+
+            </ScrollContainer>
+
+
+        </u:content>
+    </u:SplitContainer>
+
+</mvc:View>

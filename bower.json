@@ -1,0 +1,33 @@
+{
+  "name": "IT school",
+  "private": true,
+  "dependencies": {
+    "openui5-sap.ui.core": "openui5/packaged-sap.ui.core#1.48",
+    "openui5-sap.m": "openui5/packaged-sap.m#1.48",
+    "openui5-themelib_sap_belize": "openui5/packaged-themelib_sap_belize#1.48",
+    "openui5-sap.ui.layout": "openui5/packaged-sap.ui.layout#1.48",
+    "openui5-sap.ui.unified": "openui5/packaged-sap.ui.unified#1.48",
+    "openui5-sap.ui.table": "openui5/packaged-sap.ui.table#1.48",
+    "openui5-sap.tnt": "openui5/packaged-sap.tnt#1.48",
+    "jquery-whenall": "0.3.0"
+  },
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "ui5",
+    "openui5",
+    "gk"
+  ],
+  "authors": [
+    "klevytska <levitskaks@gmail.com>"
+  ],
+  "homepage": "https://www.",
+   "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "dist"
+  ]
+}
