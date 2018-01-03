@@ -3,7 +3,7 @@
           xmlns="sap.m"
           xmlns:l="sap.ui.layout"
           xmlns:u="sap.ui.unified"
-          controllerName="com.itschool.ui5typescript.controller.Main">
+          controllerName="com.itschool.ui5typescript.controller.Main" class="mainArea">
     <VBox class="sapUiLargeMarginTop sapUiLargeMarginBeginEnd">
         <Toolbar id="toolbar1" height="10em">
             <ToolbarSpacer/>
@@ -195,11 +195,11 @@
                 </l:Grid>
 
             </Panel>
-            <ScrollContainer height="130%">
-                <l:Grid defaultSpan="L3 M4 S6" class="sapUiMediumMarginBegin sapUiMediumMarginTop sapUiMediumMarginEnd">
+            <ScrollContainer height="250%">
+                <l:Grid defaultSpan="L3 M6 S12" class="sapUiMediumMarginBegin sapUiMediumMarginTop sapUiMediumMarginEnd">
                     <l:content class="sapUiLargeMarginTop sapUiLargeMarginBeginEnd">
 
-                        <VBox class="courseBox" height="330px" alignContent="Center" alignItems="Center">
+                        <VBox class="courseBox" height="350px" alignContent="Center" alignItems="Center">
                             <Image src="/images/js/js.png" width="10rem" height="10rem" class="sapUiSmallMarginTop"/>
                             <Text text="Javascript for beginners"/>
                             <RatingIndicator maxValue="5"
@@ -209,7 +209,7 @@
                             <Text text="13 pc free"/>
                             <Button text="View more ..." press="onItemPress"/>
                         </VBox>
-                        <VBox class="courseBox" height="330px" alignContent="Center" alignItems="Center">
+                        <VBox class="courseBox" height="350px" alignContent="Center" alignItems="Center">
                             <Image src="/images/js/js2.png" width="10rem" height="10rem" class="sapUiSmallMarginTop"/>
                             <Text text="Javascript (intermediate level)"/>
                             <RatingIndicator maxValue="5"
@@ -220,7 +220,7 @@
                             <Button text="View more ..." press="onItemPress"/>
 
                         </VBox>
-                        <VBox class="courseBox" height="330px" alignContent="Center" alignItems="Center">
+                        <VBox class="courseBox" height="350px" alignContent="Center" alignItems="Center">
                             <Image src="/images/js/js3.png" width="10rem" height="10rem" class="sapUiSmallMarginTop"/>
                             <Text text="Javascript (fluent level)"/>
                             <RatingIndicator maxValue="5"
@@ -231,7 +231,7 @@
                             <Button text="View more ..." press="onItemPress"/>
 
                         </VBox>
-                        <VBox class="courseBox" height="330px" alignContent="Center" alignItems="Center">
+                        <VBox class="courseBox" height="350px" alignContent="Center" alignItems="Center">
                             <Image src="/images/ts/ts.png" width="10rem" height="10rem" class="sapUiSmallMarginTop"/>
                             <Text text="Javascript for beginners"/>
                             <RatingIndicator maxValue="5"
@@ -242,7 +242,7 @@
                             <Button text="View more ..." press="onItemPress"/>
 
                         </VBox>
-                        <VBox class="courseBox" height="330px" alignContent="Center" alignItems="Center">
+                        <VBox class="courseBox" height="350px" alignContent="Center" alignItems="Center">
                             <Image src="/images/angular/angular.png" width="10rem" height="10rem" class="sapUiSmallMarginTop"/>
                             <Text text="Full angular course"/>
                             <RatingIndicator maxValue="5"
@@ -253,7 +253,7 @@
                             <Button text="View more ..." press="onItemPress"/>
 
                         </VBox>
-                        <VBox class="courseBox" height="330px" alignContent="Center" alignItems="Center">
+                        <VBox class="courseBox" height="350px" alignContent="Center" alignItems="Center">
                             <Image src="/images/vue/Vue.png" width="10rem" height="10rem" class="sapUiSmallMarginTop"/>
                             <Text text="Full Vue.js course"/>
                             <RatingIndicator maxValue="5"
@@ -264,7 +264,7 @@
                             <Button text="View more ..." press="onItemPress"/>
 
                         </VBox>
-                        <VBox class="courseBox" height="330px" alignContent="Center" alignItems="Center">
+                        <VBox class="courseBox" height="350px" alignContent="Center" alignItems="Center">
                             <Image src="/images/ui5/ui5.png" width="10rem" height="10rem" class="sapUiSmallMarginTop"/>
                             <Text text="Full OpenUi5 course"/>
                             <RatingIndicator maxValue="5"
@@ -272,6 +272,72 @@
                                              value="5" tooltip="Like 220"/>
                             <Text text="3500/month"/>
                             <Text text="8 pc free"/>
+                            <Button text="View more ..." press="onItemPress"/>
+
+                        </VBox>
+                        <VBox class="courseBox" height="350px" alignContent="Center" alignItems="Center">
+                            <Image src="/images/ES6.png" width="10rem" height="10rem" class="sapUiSmallMarginTop"/>
+                            <Text text="Ecmascript6 standard"/>
+                            <RatingIndicator maxValue="5"
+                                             class="sapUiSmallMarginBottom"
+                                             value="5" tooltip="Like 220"/>
+                            <Text text="6500/month"/>
+                            <Text text="4 pc free"/>
+                            <Button text="View more ..." press="onItemPress"/>
+
+                        </VBox>
+                        <VBox class="courseBox" height="350px" alignContent="Center" alignItems="Center">
+                            <Image src="/images/android.png" width="10rem" height="10rem" class="sapUiSmallMarginTop"/>
+                            <Text text="Android dev for beginners"/>
+                            <RatingIndicator maxValue="5"
+                                             class="sapUiSmallMarginBottom"
+                                             value="5" tooltip="Like 220"/>
+                            <Text text="8000/month"/>
+                            <Text text="4 pc free"/>
+                            <Button text="View more ..." press="onItemPress"/>
+
+                        </VBox>
+                        <VBox class="courseBox" height="350px" alignContent="Center" alignItems="Center">
+                            <Image src="/images/android2.png" width="10rem" height="10rem" class="sapUiSmallMarginTop"/>
+                            <Text text="Android dev for professionals"/>
+                            <RatingIndicator maxValue="5"
+                                             class="sapUiSmallMarginBottom"
+                                             value="5" tooltip="Like 220"/>
+                            <Text text="8500/month"/>
+                            <Text text="4 pc free"/>
+                            <Button text="View more ..." press="onItemPress"/>
+
+                        </VBox>
+                        <VBox class="courseBox" height="350px" alignContent="Center" alignItems="Center">
+                            <Image src="/images/ios.jpeg" width="10rem" height="10rem" class="sapUiSmallMarginTop"/>
+                            <Text text="iOS dev for professionals"/>
+                            <RatingIndicator maxValue="5"
+                                             class="sapUiSmallMarginBottom"
+                                             value="5" tooltip="Like 220"/>
+                            <Text text="8500/month"/>
+                            <Text text="4 pc free"/>
+                            <Button text="View more ..." press="onItemPress"/>
+
+                        </VBox>
+                        <VBox class="courseBox" height="350px" alignContent="Center" alignItems="Center">
+                            <Image src="/images/java.jpeg" width="10rem" height="10rem" class="sapUiSmallMarginTop"/>
+                            <Text text="Java for beginners"/>
+                            <RatingIndicator maxValue="5"
+                                             class="sapUiSmallMarginBottom"
+                                             value="5" tooltip="Like 220"/>
+                            <Text text="8500/month"/>
+                            <Text text="4 pc free"/>
+                            <Button text="View more ..." press="onItemPress"/>
+
+                        </VBox>
+                        <VBox class="courseBox" height="350px" alignContent="Center" alignItems="Center">
+                            <Image src="/images/java2.png" width="10rem" height="10rem" class="sapUiSmallMarginTop"/>
+                            <Text text="Java for professionals"/>
+                            <RatingIndicator maxValue="5"
+                                             class="sapUiSmallMarginBottom"
+                                             value="5" tooltip="Like 220"/>
+                            <Text text="8500/month"/>
+                            <Text text="4 pc free"/>
                             <Button text="View more ..." press="onItemPress"/>
 
                         </VBox>
